@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-color: black;
+    color: #fff;
+    background-image: url(../img/header_img_1.png);
+    height: 71vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 5fr;
+}
+
+.header .logo {
+    height: 17vw;
+    margin: 10px 10px;
+}
+
+.header .hrefs_header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header .hrefs_header a {
+    text-decoration: none;
+    color: #fff;
+    height: 3vw;
+    text-shadow: 0px 0px 5px #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2vw;
+}
+
+.header .hrefs_header a:hover{
+    opacity: 0.5;
+    text-shadow: 0px 0px 5px #fff;
+    text-decoration-color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 0.7vw;
+    text-decoration-thickness: 0.2vw;
+}
+
