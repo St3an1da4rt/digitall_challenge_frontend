@@ -6,12 +6,13 @@ class Header extends React.Component {
     return (
         <>
             <header className='header'>
-                <img src="../img/gazprom.png"></img>
+                <div className='header_logo'></div>
+                {/* <img src="../img/gazprom.png" alt="картинка"></img> */}
                 <div className='hrefs_header'>
-                    <a href="/">main</a>
-                    <a href="/workers">workers</a>
-                    <a href="/incidents">incidents</a>
-                    <a href="/main">data upload</a>
+                    <a href="/" className="href1">sing in</a>
+                    <a href="/workers" className='href2'>workers</a>
+                    <a href="/incidents" className='href3'>incidents</a>
+                    <a href="/main" className='href4'>data upload</a>
                 </div>
             </header>
             {/* <hr /> */}

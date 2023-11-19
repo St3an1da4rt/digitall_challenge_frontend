@@ -7,7 +7,7 @@ body {
     background-color: black;
     color: #fff;
     background-image: url(../img/header_img_1.png);
-    height: 71vw;
+    height: 35vw;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
@@ -17,17 +17,25 @@ body {
     grid-template-columns: 1fr 5fr;
 }
 
-.header .logo {
-    height: 17vw;
-    margin: 10px 10px;
+.header .header_logo {
+    height: 6vw;
+    width: 17vw;
+    margin-bottom: -0.7vw;
+    background-image: url(../img/gazprom_lenght-transformed.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header .hrefs_header {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
 }
 
 .header .hrefs_header a {
+    text-align: center;
+    border-bottom: 2px solid #fff transparent;
     text-decoration: none;
     color: #fff;
     height: 3vw;
@@ -36,12 +44,82 @@ body {
     font-size: 2vw;
 }
 
-.header .hrefs_header a:hover{
+.href1:hover, .href2:hover, .href3:hover, .href4:hover {
     opacity: 0.5;
     text-shadow: 0px 0px 5px #fff;
+    border-bottom: 2px solid #fff;
     text-decoration-color: #fff;
     text-decoration: underline;
     text-underline-offset: 0.7vw;
     text-decoration-thickness: 0.2vw;
 }
 
+.href1:focus, .href2:focus, .href3:focus, .href4:focus {
+    opacity: 0.5;
+}
+
+
+.main_loging {
+    margin: 0px;
+    background-color: #0079c2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.logo_loging {
+    background-image: url(/src/img/gazprom_lenght-transformed.png);
+    background-size: cover;
+    height: 10vw;
+    width: 20vw;
+}
+
+.form_loging {
+    /* border: 2px solid #696C75; */
+    width: 50vw;
+    height: auto;
+    gap: 1vb;
+    max-width: 350px;
+    display: grid;
+    align-items: center;
+}
+
+.form_loging input{
+    border: 1px solid #232323;
+    border-radius: 2vb;
+    background-color: #4195df;
+    height: 8vh;
+    text-align: center;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.form_loging button{
+    border: 1px solid #232323;
+    border-radius: 2vb;
+    background-color: #01559f;
+    height: 8vh;
+    text-align: center;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.form_loging button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.divs_incident {
+    margin: 2vh 2vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vb;
+}
+
+.divs_incident div{
+    height: 20vw;
+}
