@@ -9,10 +9,10 @@ class Header extends React.Component {
                 <div className='header_logo'></div>
                 {/* <img src="../img/gazprom.png" alt="картинка"></img> */}
                 <div className='hrefs_header'>
-                    <a href="/" className="href1">sing in</a>
-                    <a href="/workers" className='href2'>workers</a>
-                    <a href="/incidents" className='href3'>incidents</a>
-                    <a href="/main" className='href4'>data upload</a>
+                    <a href="/" className="href1">Авторизоваться</a>
+                    <a href="/workers" className='href2'>Работники</a>
+                    <a href="/incidents" className='href3'>Происшедствия</a>
+                    <a href="/main" className='href4'>Выгрузка данных</a>
                 </div>
             </header>
             {/* <hr /> */}
